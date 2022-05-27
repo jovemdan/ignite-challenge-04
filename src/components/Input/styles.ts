@@ -1,6 +1,9 @@
-import styled, { css } from 'styled-components';
-
-export const Container = styled.div`
+import styled, { css } from 'styled-components'
+type ContainerProps = {
+  isFilled: boolean
+  isFocused: boolean
+}
+export const Container = styled.div<ContainerProps>`
   display: flex;
   align-items: center;
 
@@ -48,4 +51,4 @@ export const Container = styled.div`
   svg {
     margin-right: 16px;
   }
-`;
+`
